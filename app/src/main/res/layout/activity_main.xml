@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/chelsea_market"
+        android:hint="Username/Email"
+        android:inputType="textPersonName"
+        android:textColor="#FADF4F"
+        android:textColorHighlight="#FADF4F"
+        android:textColorHint="#FADF4F"
+        android:textColorLink="#FADF4F"
+        android:textCursorDrawable="@color/BLM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        tools:text="Username" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/chelsea_market"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FADF4F"
+        android:textColorHighlight="#FADF4F"
+        android:textColorHint="#fadf4f"
+        android:textColorLink="#FADF4F"
+        android:textCursorDrawable="@color/BLM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusername"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Login"
+        android:textColor="#000000"
+        app:backgroundTint="#FAFD4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpassword"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/tvStatic"
+        android:layout_width="179dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="Don't have an account?"
+        android:textColor="#FAFD4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chelsea_market"
+        android:text="SIGN UP"
+        android:textColor="#000000"
+        app:backgroundTint="#FAFD4D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatic"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="273dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toTopOf="@+id/etusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iibo_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
